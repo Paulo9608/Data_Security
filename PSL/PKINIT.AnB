@@ -19,7 +19,7 @@ C -> ath: C,g,N1,{T0,N1,hash(C,g,N1)}inv(pk(C))
 
 ath -> C: C,
 	({|ath,C,g,KCG,T1|}skag),
-        ({|g,KCG,T1,N1|}Ktemp),
+        ({|g,KCG,T1,N1,C|}Ktemp),
         { tag,{Ktemp}inv(pk(ath))}pk(C)
 
 C -> g: s,N2,
