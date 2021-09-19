@@ -33,13 +33,20 @@ ath -> C: C,
 ### Exercise 1.3
 Using a Diffie-Hellman key-exchange, the PKINIT protocol can be made safe by changing the two initial messages. In the first message we send exp(N1, T2) signed by C. The second message has exp(N1, N2) signed by ath. This way, C can authenticate ath on exp(exp(N1, N2),T2).
 
-C -> ath: C,g,N1,{exp(N1,T2),T0,N1,hash(C,g,N1)}inv(pk(C))   
+C -> ath: C,g,N1,{exp(N1,N2),T0,N1,hash(C,g,N1)}inv(pk(C))   
 
 ath -> C: C,
 	({|ath,C,g,KCG,T1|}skag),
         ({|ath,g,KCG,T1,N1|}exp(exp(N1, N2),T2)),
-        {tag,{exp(N1, N2),C}inv(pk(ath))}pk(C)
+        {tag,{exp(N1, T2),C}inv(pk(ath))}pk(C)
 
 
 ## Exercise 2
+
+## Exercise 2.1
+
+The protocol tries to establish a secure channel between A and B.
+
+
+## Exercise 2.2
 
