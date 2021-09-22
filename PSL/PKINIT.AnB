@@ -20,7 +20,7 @@ C -> ath: C,g,N1,{T0,N1,hash(C,g,N1)}inv(pk(C))
 ath -> C: C,
 	({|ath,C,g,KCG,T1|}skag),
         ({|g,KCG,T1,N1,C|}Ktemp),
-        { tag,{Ktemp}inv(pk(ath))}pk(C)
+        { tag,{Ktemp, C}inv(pk(ath))}pk(C)
 
 C -> g: s,N2,
 	({|ath,C,g,KCG,T1|}skag),
@@ -36,5 +36,8 @@ C -> s: ({|C,s,KCS,T2|}skgs),
 s -> C: ({|hash(T2)|}KCS), {|tag,Payload|}KCS
 
 Goals:
-s *->* C: Payload
+C authenticates s on KCS
+s authenticates C on KCS
+KCS sectret between s, C, G
+
 

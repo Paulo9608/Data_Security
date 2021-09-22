@@ -5,9 +5,13 @@
 
 Which of the messages can the client C decrypt, which keys does C ever learn:
 
-Keys in the initial knowledge: pk(ath),pk(C),inv(pk(C))
+Keys in C's initial knowledge: pk(ath),pk(C),inv(pk(C))
 
-ath sends generates a the key KCG  and encrypts it with the shared key between (ath, g) "skag", and with a new key Ktemp. ath then sends to C the message  c,({|ath,C,g,KCG,T1|}skag), ({|g,KCG,T1,N1|}Ktemp), { tag,{Ktemp}inv(pk(ath))}pk(C). Using pk(C), C can decode {tag,{Ktemp}inv(pk(ath))}, and get Ktemp, which has ath's signature.
+- ath generates the key KCG  and encrypts it with the shared key between (ath, g) "skag", and with a new key Ktemp.
+
+- ath then sends to C the message  " c,({|ath,C,g,KCG,T1|}skag), ({|g,KCG,T1,N1|}Ktemp), { tag,{Ktemp}inv(pk(ath))}pk(C) ".
+
+- Using pk(C), C can decode {tag,{Ktemp}inv(pk(ath))}, and get Ktemp, which has ath's signature.
 
 At this point C uses Ktemp to decode {|g,KCG,T!,N1}. Now C also knows the symmetric key KCG. 
 The message part encrypted with the key skag stays encrypted to C.
@@ -43,10 +47,10 @@ ath -> C: C,
 
 ## Exercise 2
 
-## Exercise 2.1
+### Exercise 2.1
 
 The protocol tries to establish a secure channel between A and B.
 
 
-## Exercise 2.2
+### Exercise 2.2
 
