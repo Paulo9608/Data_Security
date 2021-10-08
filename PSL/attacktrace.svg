@@ -1,0 +1,67 @@
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1">
+<rect x="0" y="0" width="100" height="20" style="fill:white;stroke:black;stroke-width:2"/>
+<text x="50" y="15" text-anchor="middle" style="font-family: Arial, Helvetica, sans-serif">
+(x802,1)</text>
+<line x1="50" y1="20" x2="50" y2="600" style="stroke:black;stroke-width:2" />
+<rect x="25" y="600" width="50" height="10" style="fill:black;stroke:black;stroke-width:2"/>
+<rect x="1272" y="0" width="100" height="20" style="fill:white;stroke:black;stroke-width:2"/>
+<text x="1322" y="15" text-anchor="middle" style="font-family: Arial, Helvetica, sans-serif">
+i</text>
+<line x1="1322" y1="20" x2="1322" y2="600" style="stroke:black;stroke-width:2" />
+<rect x="1297" y="600" width="50" height="10" style="fill:black;stroke:black;stroke-width:2"/>
+<rect x="2544" y="0" width="100" height="20" style="fill:white;stroke:black;stroke-width:2"/>
+<text x="2594" y="15" text-anchor="middle" style="font-family: Arial, Helvetica, sans-serif">
+(x801,1)</text>
+<line x1="2594" y1="20" x2="2594" y2="600" style="stroke:black;stroke-width:2" />
+<rect x="2569" y="600" width="50" height="10" style="fill:black;stroke:black;stroke-width:2"/>
+<rect x="3816" y="0" width="100" height="20" style="fill:white;stroke:black;stroke-width:2"/>
+<text x="3866" y="15" text-anchor="middle" style="font-family: Arial, Helvetica, sans-serif">
+(x801,2)</text>
+<line x1="3866" y1="20" x2="3866" y2="600" style="stroke:black;stroke-width:2" />
+<rect x="3841" y="600" width="50" height="10" style="fill:black;stroke:black;stroke-width:2"/>
+<rect x="5088" y="0" width="100" height="20" style="fill:white;stroke:black;stroke-width:2"/>
+<text x="5138" y="15" text-anchor="middle" style="font-family: Arial, Helvetica, sans-serif">
+(home,1)</text>
+<line x1="5138" y1="20" x2="5138" y2="600" style="stroke:black;stroke-width:2" />
+<rect x="5113" y="600" width="50" height="10" style="fill:black;stroke:black;stroke-width:2"/>
+<line x1="50.0" y1="50" x2="1322.0" y2="50" style="stroke:black;stroke-width:2" />
+<line x1="1312.0" y1="40" x2="1322.0" y2="50" style="stroke:black;stroke-width:2" />
+<line x1="1312.0" y1="60" x2="1322.0" y2="50" style="stroke:black;stroke-width:2" />
+<text x="686.0" y="45" text-anchor="middle" style="font-family: Arial, Helvetica, sans-serif"> x802,x801,exp(g,X(1)),mac(pw(x802,home),m1,x802,x801,exp(g,X(1)))</text>
+<line x1="1322.0" y1="100" x2="2594.0" y2="100" style="stroke:black;stroke-width:2" />
+<line x1="2584.0" y1="90" x2="2594.0" y2="100" style="stroke:black;stroke-width:2" />
+<line x1="2584.0" y1="110" x2="2594.0" y2="100" style="stroke:black;stroke-width:2" />
+<text x="1958.0" y="95" text-anchor="middle" style="font-family: Arial, Helvetica, sans-serif"> x802,x801,g,x306</text>
+<line x1="1322.0" y1="150" x2="2594.0" y2="150" style="stroke:black;stroke-width:2" />
+<line x1="1332.0" y1="140" x2="1322.0" y2="150" style="stroke:black;stroke-width:2" />
+<line x1="1332.0" y1="160" x2="1322.0" y2="150" style="stroke:black;stroke-width:2" />
+<text x="1958.0" y="145" text-anchor="middle" style="font-family: Arial, Helvetica, sans-serif"> x802,x801,g,x306,x801,g,exp(g,Y(2)),mac(pw(x801,home),m2,x802,x801,g,x306,x801,g,exp(g,Y(2)))</text>
+<line x1="1322.0" y1="200" x2="3866.0" y2="200" style="stroke:black;stroke-width:2" />
+<line x1="3856.0" y1="190" x2="3866.0" y2="200" style="stroke:black;stroke-width:2" />
+<line x1="3856.0" y1="210" x2="3866.0" y2="200" style="stroke:black;stroke-width:2" />
+<text x="2594.0" y="195" text-anchor="middle" style="font-family: Arial, Helvetica, sans-serif"> x802,x801,exp(g,X(1)),mac(pw(x802,home),m1,x802,x801,exp(g,X(1)))</text>
+<line x1="1322.0" y1="250" x2="3866.0" y2="250" style="stroke:black;stroke-width:2" />
+<line x1="1332.0" y1="240" x2="1322.0" y2="250" style="stroke:black;stroke-width:2" />
+<line x1="1332.0" y1="260" x2="1322.0" y2="250" style="stroke:black;stroke-width:2" />
+<text x="2594.0" y="245" text-anchor="middle" style="font-family: Arial, Helvetica, sans-serif"> x802,x801,exp(g,X(1)),mac(pw(x802,home),m1,x802,x801,exp(g,X(1))),x801,exp(g,X(1)),exp(g,Y(3)),mac(pw(x801,home),m2,x802,x801,exp(g,X(1)),mac(pw(x802,home),m1,x802,x801,exp(g,X(1))),x801,exp(g,X(1)),exp(g,Y(3)))</text>
+<line x1="1322.0" y1="300" x2="5138.0" y2="300" style="stroke:black;stroke-width:2" />
+<line x1="5128.0" y1="290" x2="5138.0" y2="300" style="stroke:black;stroke-width:2" />
+<line x1="5128.0" y1="310" x2="5138.0" y2="300" style="stroke:black;stroke-width:2" />
+<text x="3230.0" y="295" text-anchor="middle" style="font-family: Arial, Helvetica, sans-serif"> x802,x801,exp(g,X(1)),mac(pw(x802,home),m1,x802,x801,exp(g,X(1))),x801,exp(g,X(1)),exp(g,Y(3)),mac(pw(x801,home),m2,x802,x801,exp(g,X(1)),mac(pw(x802,home),m1,x802,x801,exp(g,X(1))),x801,exp(g,X(1)),exp(g,Y(3)))</text>
+<line x1="1322.0" y1="350" x2="5138.0" y2="350" style="stroke:black;stroke-width:2" />
+<line x1="1332.0" y1="340" x2="1322.0" y2="350" style="stroke:black;stroke-width:2" />
+<line x1="1332.0" y1="360" x2="1322.0" y2="350" style="stroke:black;stroke-width:2" />
+<text x="3230.0" y="345" text-anchor="middle" style="font-family: Arial, Helvetica, sans-serif"> x801,x802,mac(pw(x802,home),m3,x801,exp(g,X(1)),exp(g,Y(3))),mac(pw(x801,home),m4,x801,x802,mac(pw(x802,home),m3,x801,exp(g,X(1)),exp(g,Y(3))))</text>
+<line x1="1322.0" y1="400" x2="2594.0" y2="400" style="stroke:black;stroke-width:2" />
+<line x1="2584.0" y1="390" x2="2594.0" y2="400" style="stroke:black;stroke-width:2" />
+<line x1="2584.0" y1="410" x2="2594.0" y2="400" style="stroke:black;stroke-width:2" />
+<text x="1958.0" y="395" text-anchor="middle" style="font-family: Arial, Helvetica, sans-serif"> x801,x802,mac(pw(x802,home),m3,x801,exp(g,X(1)),exp(g,Y(3))),mac(pw(x801,home),m4,x801,x802,mac(pw(x802,home),m3,x801,exp(g,X(1)),exp(g,Y(3))))</text>
+<line x1="1322.0" y1="450" x2="2594.0" y2="450" style="stroke:black;stroke-width:2" />
+<line x1="1332.0" y1="440" x2="1322.0" y2="450" style="stroke:black;stroke-width:2" />
+<line x1="1332.0" y1="460" x2="1322.0" y2="450" style="stroke:black;stroke-width:2" />
+<text x="1958.0" y="445" text-anchor="middle" style="font-family: Arial, Helvetica, sans-serif"> x801,x802,exp(g,Y(2)),mac(pw(x802,home),m3,x801,exp(g,X(1)),exp(g,Y(3))),mac(exp(g,Y(2)),m5,x801,x802,exp(g,Y(2)),mac(pw(x802,home),m3,x801,exp(g,X(1)),exp(g,Y(3))))</text>
+<line x1="1322.0" y1="500" x2="2594.0" y2="500" style="stroke:black;stroke-width:2" />
+<line x1="2584.0" y1="490" x2="2594.0" y2="500" style="stroke:black;stroke-width:2" />
+<line x1="2584.0" y1="510" x2="2594.0" y2="500" style="stroke:black;stroke-width:2" />
+<text x="1958.0" y="495" text-anchor="middle" style="font-family: Arial, Helvetica, sans-serif"> {|x709|}_(exp(g,Y(2)))</text>
+</svg>

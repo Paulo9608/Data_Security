@@ -1,26 +1,26 @@
 Protocol: CallHome
 
-Types: Agent A,B,home;
+Types: Agent A,B,Home;
        Number X,Y,g,M,m1,m2,m3,m4,m5;
        Function pw,mac
 
-Knowledge: A: A,home,pw(A,home),B,g,mac,m1,m2,m3,m4,m5;
-	   B: B,home,pw(B,home),g,mac,m1,m2,m3,m4,m5;
-	   home: A,B,home,pw,g,mac,m1,m2,m3,m4,m5
+Knowledge: A: A,Home,pw(A,Home),B,g,mac,m1,m2,m3,m4,m5;
+	   B: B,Home,pw(B,Home),g,mac,m1,m2,m3,m4,m5;
+	   Home: A,B,Home,pw,g,mac,m1,m2,m3,m4,m5
 
 Actions:
-A->B:             A,B,exp(g,X),mac(pw(A,home),m1,A,B,exp(g,X))
+A->B:    A,B,exp(g,X),mac(pw(A,Home),m1,A,B,exp(g,X))
 
-B->home:          A,B,exp(g,X),mac(pw(A,home),m1,A,B,exp(g,X)),
-                    B,exp(g,X),exp(g,Y),
-mac(pw(B,home),m2,A,B,exp(g,X),mac(pw(A,home),m1,A,B,exp(g,X)),
-		    B,exp(g,X),exp(g,Y))
+B->Home: A,B,exp(g,X),mac(pw(A,Home),m1,A,B,exp(g,X)),
+         B,exp(g,X),exp(g,Y),
+         mac(pw(B,Home),m2,A,B,exp(g,X),mac(pw(A,Home),m1,A,B,exp(g,X)),
+	  B,exp(g,X),exp(g,Y))
 
-home->B:	  B,A,mac(pw(A,home),m3,B,exp(g,X),exp(g,Y)),
-mac(pw(B,home),m4,B,A,mac(pw(A,home),m3,B,exp(g,X),exp(g,Y)))
+Home->B: B,A,mac(pw(A,Home),m3,B,exp(g,X),exp(g,Y)),
+         mac(pw(B,Home),m4,B,A,exp(g,X),exp(g,Y),mac(pw(A,Home),m3,B,exp(g,X),exp(g,Y)))
 
-B->A:                  B,A,exp(g,Y),mac(pw(A,home),m3,B,exp(g,X),exp(g,Y)),
-mac(exp(exp(g,X),Y),m5,B,A,exp(g,Y),mac(pw(A,home),m3,B,exp(g,X),exp(g,Y)))
+B->A:    B,A,exp(g,Y),mac(pw(A,Home),m3,B,exp(g,X),exp(g,Y)),
+         mac(exp(exp(g,X),Y),m5,B,A,exp(g,Y),mac(pw(A,Home),m3,B,exp(g,X),exp(g,Y)))
 
 A->B: {|M|}exp(exp(g,X),Y)
 
@@ -28,5 +28,5 @@ Goals:
 B authenticates A on M
 M secret between A,B
 
-#pw(A,home) guessable secret between A,home
+#pw(A,Home) guessable secret between A,Home
 

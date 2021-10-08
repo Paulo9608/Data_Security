@@ -1,0 +1,16 @@
+Protocol: test
+
+Types: Agent A, B, s;
+       Number Payload;
+       Function sk,hash,mac
+       
+
+Knowledge: A: A, B, s, mac, sk, sk(A, s);
+	       B: A, B, s, mac, sk, sk(B, s);
+	       s: A, B, s, mac, sk, sk(A, s), sk(B, s)
+
+
+Actions: A -> s : A, B, Payload, mac(sk(A, s), A, B, Payload)
+         s -> B : A, B, Payload, mac(sk(B, s), A, B, Payload)
+Goals:
+     B authenticates A on Payload
